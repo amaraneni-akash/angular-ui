@@ -1,0 +1,9 @@
+<div class="flex-container">
+    <div style="flex-grow: 1" class="card" *ngFor="let chart of chartData">
+        <div>{{chart.name}}</div>
+        <div appSpeedometer [data]="chart.data - 0" *ngIf="chart.type === 'speedometer'"></div>
+        <div appRectangularProgressBar [data]="chart.data - 0" *ngIf="chart.type === 'progressBar'"></div>
+        <div appDonutChart [chartData]="chart.data" *ngIf="chart.type === 'donut'"></div>
+        <div appVerticalBarChart [data]="chart.data" *ngIf="chart.type === 'barChart'"></div>
+    </div>
+</div>

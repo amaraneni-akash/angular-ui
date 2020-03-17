@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+.verticalBarChart .axis .tick line , .verticalBarChart line {
+    display: block;
+    stroke: #d6d6d6;
+    stroke-width: 1;
+    opacity: .8;
+    stroke-dasharray: 3;
+}
+
+.rectangularBarChart line {
+    display: block;
+    stroke-width: 5;
+}
+
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+  background-color: #FFFFFF;
+ }
+
+ .cardTile {   
+    -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+padding: 0.9375rem 1.5625rem 3rem 1.5625rem;
+box-sizing: unset;
+background: #ffffff;
+overflow: hidden;
+ }
+
+ .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    align-content: space-between;
+    background-color: #f1f1f1;
+  }
+  
+  .flex-container > div {
+    background-color: #ffffff;
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 18px;
+  }
+
+  .d3-tip {
+    line-height: 1;
+    font-weight: bold;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 0.2px;
+    text-transform:capitalize;
+  }
+  
+  /* Creates a small triangle extender for the tooltip */
+  .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 100%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+  }
+  
+  /* Style northward tooltips differently */
+  .d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+  }
