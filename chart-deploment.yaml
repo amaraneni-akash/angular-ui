@@ -1,7 +1,7 @@
 apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: chart-ui
+  name: charts-angular-ui
 spec:
   replicas: 1
   template:
@@ -10,7 +10,7 @@ spec:
         label-key : label-value  
     spec:
       containers:
-        - name: chart-ui-container
+        - name: chart-ui-angular-container
           image: amaraneniakash/angular-chart-ui
           imagePullPolicy: Always
           ports:
